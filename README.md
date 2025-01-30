@@ -98,16 +98,24 @@ python main.py
 The application will be running and accessible through your EC2 instance's public IP address.
 
 ### Usage
+  - Home page
+    
+    ![Screenshot 2025-01-26 135621](https://github.com/user-attachments/assets/14fc7bc0-d56d-408f-938a-4023a31da497)
+
   - User Registration: Users can register with an email and password.
+    
     ![Screenshot 2025-01-26 135733](https://github.com/user-attachments/assets/024287b3-b8fe-45f8-b189-8b803765f555)
 
   - User Login: Registered users can log in to their accounts.
+    
     ![Screenshot 2025-01-26 135744](https://github.com/user-attachments/assets/39cf1264-ef18-4389-b3b8-70c1cc32fe0b)
 
   - Admin Dashboard: Admins can create, edit, and delete blog posts.
-    ![Screenshot 2025-01-26 135621](https://github.com/user-attachments/assets/c94bd823-4820-4ca5-8973-a6720955e40b)
+    
+    ![Screenshot 2025-01-26 141330](https://github.com/user-attachments/assets/3b2788dc-dff9-4e8e-a22f-5af4de319618)
 
   - Commenting: Logged-in users can comment on posts.
+    
     ![Screenshot 2025-01-26 141423](https://github.com/user-attachments/assets/187de4f2-5a24-4605-8f52-0116fcf3c726)
 
   - Profile Images: Gravatar is used to show profile images next to user comments.
