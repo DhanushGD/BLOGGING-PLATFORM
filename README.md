@@ -93,22 +93,22 @@ Start the application:
 ```bash
 python main.py
 ```
-![image](https://github.com/user-attachments/assets/d4a4d14b-1234-46ea-b297-8c9a43e73817)
+![Screenshot 2025-01-26 141934](https://github.com/user-attachments/assets/f0b878a7-e630-408a-be57-87b744c00afa)
 
 The application will be running and accessible through your EC2 instance's public IP address.
 
 ### Usage
   - User Registration: Users can register with an email and password.
-    ![image](https://github.com/user-attachments/assets/64ba04b9-a63e-4a4e-babf-cc3c461292e4)
+    ![Screenshot 2025-01-26 135733](https://github.com/user-attachments/assets/024287b3-b8fe-45f8-b189-8b803765f555)
 
   - User Login: Registered users can log in to their accounts.
-    ![image](https://github.com/user-attachments/assets/4224dc4b-6946-4978-80a0-3285f21d2df8)
+    ![Screenshot 2025-01-26 135744](https://github.com/user-attachments/assets/39cf1264-ef18-4389-b3b8-70c1cc32fe0b)
 
   - Admin Dashboard: Admins can create, edit, and delete blog posts.
-    ![image](https://github.com/user-attachments/assets/86f29aab-87b1-4f04-a135-e89678eab5c7)
+    ![Screenshot 2025-01-26 135621](https://github.com/user-attachments/assets/c94bd823-4820-4ca5-8973-a6720955e40b)
 
   - Commenting: Logged-in users can comment on posts.
-    ![image](https://github.com/user-attachments/assets/79ca5296-697a-44d9-acc3-1cd5c57dbdc5)
+    ![Screenshot 2025-01-26 141423](https://github.com/user-attachments/assets/187de4f2-5a24-4605-8f52-0116fcf3c726)
 
   - Profile Images: Gravatar is used to show profile images next to user comments.
   
