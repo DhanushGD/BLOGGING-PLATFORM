@@ -1,0 +1,93 @@
+{% block content %}
+{% include "header.html" %}
+
+<!-- Page Header -->
+<header class="masthead" style="background-image: url('../static/assets/img/edit-bg.jpg')">
+  <div class="container position-relative px-4 px-lg-5">
+    <div class="row gx-4 gx-lg-5 justify-content-center">
+      <div class="col-md-10 col-lg-8 col-xl-7">
+        <div class="page-heading">
+          {% if is_edit %}
+          <h1>Edit Post</h1>
+          {% else %}
+          <h1>New Post</h1>
+          {% endif %}
+          <span class="subheading">You're going to make a great blog post!</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main class="mb-4">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-md-10 mx-auto">
+        <!-- Initialize CKEditor -->
+        {{ ckeditor.load() }}
+        {{ ckeditor.config(name='body') }}
+
+        <!-- Begin manual form rendering -->
+        <form method="POST">
+          {{ form.hidden_tag() }} <!-- CSRF Token -->
+
+          <div class="mb-3">
+            <label for="{{ form.title.id }}" class="form-label">{{ form.title.label }}</label>
+            {{ form.title(class="form-control", placeholder="Enter Post Title") }}
+            {% if form.title.errors %}
+            <div class="invalid-feedback">
+              {% for error in form.title.errors %}
+              <p>{{ error }}</p>
+              {% endfor %}
+            </div>
+            {% endif %}
+          </div>
+
+          <div class="mb-3">
+            <label for="{{ form.subtitle.id }}" class="form-label">{{ form.subtitle.label }}</label>
+            {{ form.subtitle(class="form-control", placeholder="Enter Post Subtitle") }}
+            {% if form.subtitle.errors %}
+            <div class="invalid-feedback">
+              {% for error in form.subtitle.errors %}
+              <p>{{ error }}</p>
+              {% endfor %}
+            </div>
+            {% endif %}
+          </div>
+
+          <div class="mb-3">
+            <label for="{{ form.img_url.id }}" class="form-label">{{ form.img_url.label }}</label>
+            {{ form.img_url(class="form-control", placeholder="Enter Image URL") }}
+            {% if form.img_url.errors %}
+            <div class="invalid-feedback">
+              {% for error in form.img_url.errors %}
+              <p>{{ error }}</p>
+              {% endfor %}
+            </div>
+            {% endif %}
+          </div>
+
+          <div class="mb-3">
+            <label for="{{ form.body.id }}" class="form-label">{{ form.body.label }}</label>
+            {{ form.body(class="form-control", rows="5", placeholder="Write your blog post content here...") }}
+            {% if form.body.errors %}
+            <div class="invalid-feedback">
+              {% for error in form.body.errors %}
+              <p>{{ error }}</p>
+              {% endfor %}
+            </div>
+            {% endif %}
+          </div>
+
+          <div class="mb-3">
+            <button type="submit" class="btn btn-primary w-100">{{ form.submit.label }}</button>
+          </div>
+        </form>
+        <!-- End manual form rendering -->
+      </div>
+    </div>
+  </div>
+</main>
+
+{% include "footer.html" %}
+{% endblock %}
