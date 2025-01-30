@@ -35,7 +35,7 @@ This is a simple blogging platform built using **Flask** and various web develop
 1. **Clone the repository:**
 
    ```bash
-   (https://github.com/DhanushGD/My-Blog.git)
+   (https://github.com/DhanushGD/BLOGGING-PLATFORM.git)
    cd your-repository
 2. **Create a virtual environment:**
   ```bash
